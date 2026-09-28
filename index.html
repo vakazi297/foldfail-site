@@ -2,76 +2,249 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Fold Fail — Fly Stupid Stuff</title>
-  <meta name="description" content="Fold Fail is a chaotic endless flyer built for the iPhone Duo. Tap to flap. The hinge is how you show off. Then you crash. Free to download. No ads.">
+  <meta name="description" content="Fly a dirty mattress, a 1998 computer, or Grandpa's scooter through folding panels. Crash loudly. Built for the iPhone Duo. Free. No ads.">
   <link rel="canonical" href="https://foldfail.app/">
-  <meta name="theme-color" content="#4A1FB8">
+  <meta name="theme-color" content="#1a0630">
+  <meta property="og:title" content="Fold Fail — Fly Stupid Stuff">
+  <meta property="og:description" content="Fly absolute garbage through folding panels. Crash loudly. Free. No ads.">
+  <meta property="og:image" content="clips/hero.jpg">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Nunito:wght@700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,800;0,900;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/site.css">
 </head>
 <body>
+  <div class="grain" aria-hidden="true"></div>
+
   <header class="nav">
-    <a class="brand" href="./">FOLD FAIL</a>
+    <a class="nav-mark" href="./">FOLD<span>FAIL</span></a>
     <nav class="nav-links" aria-label="Site">
-      <a href="support/">SUPPORT</a>
-      <a href="privacy/">PRIVACY</a>
+      <a href="#crashes">CRASHES</a>
+      <a href="#flyers">FLYERS</a>
+      <a href="#worlds">WORLDS</a>
+      <a class="nav-get" href="https://apps.apple.com/app/id6815006578">GET IT</a>
     </nav>
   </header>
 
   <main>
-    <section class="hero">
-      <div class="hero-copy">
-        <h1 class="wordmark">FOLD<br>FAIL</h1>
-        <p class="slogan">FLY STUPID STUFF!</p>
-      </div>
-    </section>
+    <!-- HERO -->
+    <section class="hero burst">
+      <div class="burst-rays" aria-hidden="true"></div>
+      <div class="confetti" aria-hidden="true"></div>
 
-    <section class="shots" aria-label="Gameplay">
-      <img src="shots/fly.jpg" alt="A paper dart flying through folding panels in Hot Fold, score 19." width="900" height="1948">
-      <img src="shots/mattress.jpg" alt="The dirty mattress flyer over Devil's Pit, score 29." width="900" height="1948">
-      <img src="shots/crash.jpg" alt="The short bus crashing through a shattered screen. The stamp says Hinge Betrayed You." width="900" height="1948">
-      <img src="shots/worlds.jpg" alt="Six real runs: Devil's Pit, Deep Space, City Life, Gift Wrap, Your Office, and Sunset Commute." width="900" height="1948">
-    </section>
-
-    <section class="hero hero-after">
-      <div class="hero-copy">
-        <p class="lede">Tap to flap. The hinge on the iPhone Duo is how you show off. Then you fold too hard, and the wreck is the whole point. Free to download. No ads, ever.</p>
-        <div class="badge-block">
-          <a href="https://apps.apple.com/app/id6815006578" aria-label="Download on the App Store">
-            <img src="assets/app-store-badge.svg" alt="Download on the App Store" width="162" height="54">
-          </a>
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <h1 class="wordmark slam">
+            <span class="wm-fold">FOLD</span>
+            <span class="wm-fail">FAIL</span>
+          </h1>
+          <p class="hero-shout slam" style="--delay: .18s">FLY ABSOLUTE <em>GARBAGE.</em></p>
+          <p class="label">TAP TO FLAP. <b>FOLD TO GLIDE.</b></p>
+          <div class="cta">
+            <a class="badge" href="https://apps.apple.com/app/id6815006578" aria-label="Download Fold Fail on the App Store">
+              <img src="assets/app-store-badge.svg" alt="Download on the App Store" width="180" height="60">
+            </a>
+            <span class="chip">FREE · NO ADS</span>
+          </div>
         </div>
-        <p class="fine">Apple and the Apple logo are trademarks of Apple Inc., registered in the U.S. and other countries. App Store is a service mark of Apple Inc.</p>
+
+        <div class="hero-stage">
+          <img class="float f1" src="flyers/blueprint-flap.png" alt="" width="320" height="320">
+          <img class="float f2" src="flyers/twofoldbill-panic.png" alt="" width="320" height="320">
+          <img class="float f3" src="flyers/loveletter-flap.png" alt="" width="320" height="320">
+          <img class="float f4" src="flyers/graph-glide.png" alt="" width="320" height="320">
+          <img class="float f5" src="flyers/pizzaslice-panic.png" alt="" width="320" height="320">
+          <img class="float f6" src="flyers/notebook-glide.png" alt="" width="320" height="320">
+
+          <div class="phone phone-hero">
+            <video src="clips/hero.mp4" poster="clips/hero.jpg" autoplay muted loop playsinline preload="auto" aria-label="Fold Fail trailer: Grandpa's scooter, a dirty mattress and a hot dog combo crash through folding panels."></video>
+          </div>
+
+          <div class="starburst hero-burst" aria-hidden="true"><span>HINGE<br>BETRAYED<br>YOU</span></div>
+        </div>
+      </div>
+
+      <a class="scroll-cue" href="#crashes" aria-label="Scroll to the crashes">WATCH IT FAIL ↓</a>
+    </section>
+
+    <!-- TICKER -->
+    <div class="tape-zone" aria-hidden="true">
+      <div class="tape tape-a"><div class="tape-track">
+        <span>FOLDED</span><span>TOO MUCH HINGE</span><span>SKILL ISSUE</span><span>WHY</span><span>ABSOLUTE DISASTER</span><span>PANIC FLAP</span><span>HINGE BETRAYED YOU</span><span>TRY FOLDING LESS</span><span>YOU FOLDED TOO HARD</span><span>THAT WAS EMBARRASSING</span>
+        <span>FOLDED</span><span>TOO MUCH HINGE</span><span>SKILL ISSUE</span><span>WHY</span><span>ABSOLUTE DISASTER</span><span>PANIC FLAP</span><span>HINGE BETRAYED YOU</span><span>TRY FOLDING LESS</span><span>YOU FOLDED TOO HARD</span><span>THAT WAS EMBARRASSING</span>
+      </div></div>
+      <div class="tape tape-b"><div class="tape-track">
+        <span>NO ADS</span><span>FLY STUPID STUFF</span><span>NO ADS</span><span>FLY STUPID STUFF</span><span>NO ADS</span><span>FLY STUPID STUFF</span><span>NO ADS</span><span>FLY STUPID STUFF</span>
+        <span>NO ADS</span><span>FLY STUPID STUFF</span><span>NO ADS</span><span>FLY STUPID STUFF</span><span>NO ADS</span><span>FLY STUPID STUFF</span><span>NO ADS</span><span>FLY STUPID STUFF</span>
+      </div></div>
+    </div>
+
+    <!-- CRASH REEL -->
+    <section class="section crashes" id="crashes">
+      <h2 class="mega reveal">
+        <span class="c-white">CRASH.</span>
+        <span class="c-yellow">WATCH.</span>
+        <span class="c-pink">REGRET.</span>
+      </h2>
+      <p class="sub reveal">Real runs, recorded in the game. Every flyer dies its own way.</p>
+
+      <div class="reel">
+        <figure class="clip reveal">
+          <div class="phone"><video data-src="clips/crash-computer.mp4" poster="clips/crash-computer.jpg" muted loop playsinline preload="none"></video></div>
+          <figcaption><b>1998 COMPUTER</b> blue-screens</figcaption>
+        </figure>
+        <figure class="clip reveal">
+          <div class="phone"><video data-src="clips/crash-grandpa.mp4" poster="clips/crash-grandpa.jpg" muted loop playsinline preload="none"></video></div>
+          <figcaption><b>GRANDPA'S SCOOTER</b> in City Life</figcaption>
+        </figure>
+        <figure class="clip reveal">
+          <div class="phone"><video data-src="clips/crash-dumpster.mp4" poster="clips/crash-dumpster.jpg" muted loop playsinline preload="none"></video></div>
+          <figcaption><b>DUMPSTER</b> catches fire</figcaption>
+        </figure>
+        <figure class="clip reveal">
+          <div class="phone"><video data-src="clips/crash-mattress.mp4" poster="clips/crash-mattress.jpg" muted loop playsinline preload="none"></video></div>
+          <figcaption><b>DIRTY MATTRESS</b> in Devil's Pit</figcaption>
+        </figure>
+        <figure class="clip reveal">
+          <div class="phone"><video data-src="clips/crash-cart.mp4" poster="clips/crash-cart.jpg" muted loop playsinline preload="none"></video></div>
+          <figcaption><b>SHOPPING CART</b> in Deep Space</figcaption>
+        </figure>
+        <figure class="clip reveal">
+          <div class="phone"><video data-src="clips/crash-hotdog.mp4" poster="clips/crash-hotdog.jpg" muted loop playsinline preload="none"></video></div>
+          <figcaption><b>$1.50 HOTDOG COMBO</b> at Your Office</figcaption>
+        </figure>
+        <figure class="clip reveal">
+          <div class="phone"><video data-src="clips/crash-teacher.mp4" poster="clips/crash-teacher.jpg" muted loop playsinline preload="none"></video></div>
+          <figcaption><b>ANNOYING TEACHER</b> gives a pop quiz</figcaption>
+        </figure>
+        <figure class="clip reveal">
+          <div class="phone"><video data-src="clips/crash-pizza.mp4" poster="clips/crash-pizza.jpg" muted loop playsinline preload="none"></video></div>
+          <figcaption><b>PIZZA SLICE</b> on the Sunset Commute</figcaption>
+        </figure>
       </div>
     </section>
 
-    <section class="facts" aria-label="What it is">
-      <article class="fact">
-        <h2>THE HINGE</h2>
-        <p>Built for a folding phone. Open it and you float. Close it and you drop. Tap still flies the whole game on iPhone and iPad.</p>
-      </article>
-      <article class="fact">
-        <h2>THE FAIL</h2>
-        <p>Runs are short. Crashes are loud. Share the clip, or don’t. Nothing from the camera uploads unless you send it yourself.</p>
-      </article>
-      <article class="fact">
-        <h2>NO ADS</h2>
-        <p>There is no ad break and no rewarded video. The shop sells paper, worlds, unlimited lives, and continues. That’s the whole store.</p>
-      </article>
+    <!-- FOLD -->
+    <section class="section fold burst burst-cool" id="fold">
+      <div class="burst-rays" aria-hidden="true"></div>
+      <div class="fold-inner">
+        <div class="fold-copy">
+          <h2 class="mega reveal">
+            <span class="c-cyan">FOLD THE PHONE.</span>
+            <span class="c-white">FLY THE PAPER.</span>
+          </h2>
+          <p class="sub reveal">On the iPhone Duo the hinge is a control. Open it and you float. Close it and you drop like a rock. Open it too far and you float straight into a panel.</p>
+          <div class="fold-keys reveal">
+            <span class="key key-open">OPEN = GLIDE</span>
+            <span class="key key-close">CLOSE = DIVE</span>
+          </div>
+          <p class="label small">TAP TO PLAY ON ANY iPHONE. <b>FOLD CONTROLS ON iPHONE DUO.</b></p>
+        </div>
+
+        <div class="duo reveal" aria-hidden="true">
+          <div class="duo-half duo-left"></div>
+          <div class="duo-half duo-right"></div>
+          <img class="duo-flyer" src="flyers/legalpad-glide.png" alt="" width="320" height="320">
+        </div>
+      </div>
+    </section>
+
+    <!-- FLYERS -->
+    <section class="section flyers" id="flyers">
+      <h2 class="mega reveal">
+        <span class="c-white">16 RIDICULOUS</span>
+        <span class="c-yellow">FLYERS.</span>
+      </h2>
+      <p class="sub reveal">Poke one.</p>
+
+      <ul class="roster">
+        <li><button type="button" data-id="legalpad"><img src="flyers/legalpad-idle.png" alt="" width="320" height="320" loading="lazy"><span>LEGAL PAD</span></button></li>
+        <li><button type="button" data-id="notebook"><img src="flyers/notebook-idle.png" alt="" width="320" height="320" loading="lazy"><span>SHORT BUS</span></button></li>
+        <li><button type="button" data-id="graph"><img src="flyers/graph-idle.png" alt="" width="320" height="320" loading="lazy"><span>UFO</span></button></li>
+        <li><button type="button" data-id="crayon"><img src="flyers/crayon-idle.png" alt="" width="320" height="320" loading="lazy"><span>CLOWN</span></button></li>
+        <li><button type="button" data-id="loveletter"><img src="flyers/loveletter-idle.png" alt="" width="320" height="320" loading="lazy"><span>$1.50 HOTDOG COMBO</span></button></li>
+        <li><button type="button" data-id="taxform"><img src="flyers/taxform-idle.png" alt="" width="320" height="320" loading="lazy"><span>ANNOYING TEACHER</span></button></li>
+        <li><button type="button" data-id="divorcepapers"><img src="flyers/divorcepapers-idle.png" alt="" width="320" height="320" loading="lazy"><span>TECH BRO</span></button></li>
+        <li><button type="button" data-id="classified"><img src="flyers/classified-idle.png" alt="" width="320" height="320" loading="lazy"><span>$100 BILL</span></button></li>
+        <li><button type="button" data-id="treasuremap"><img src="flyers/treasuremap-idle.png" alt="" width="320" height="320" loading="lazy"><span>DUMPSTER</span></button></li>
+        <li><button type="button" data-id="blueprint"><img src="flyers/blueprint-idle.png" alt="" width="320" height="320" loading="lazy"><span>GRANDPA'S SCOOTER</span></button></li>
+        <li><button type="button" data-id="receipt"><img src="flyers/receipt-idle.png" alt="" width="320" height="320" loading="lazy"><span>1998 COMPUTER</span></button></li>
+        <li><button type="button" data-id="twofoldbill"><img src="flyers/twofoldbill-idle.png" alt="" width="320" height="320" loading="lazy"><span>DIRTY MATTRESS</span></button></li>
+        <li><button type="button" data-id="yomamacouch"><img src="flyers/yomamacouch-idle.png" alt="" width="320" height="320" loading="lazy"><span>YO MAMA'S COUCH</span></button></li>
+        <li><button type="button" data-id="goldenfold"><img src="flyers/goldenfold-idle.png" alt="" width="320" height="320" loading="lazy"><span>SHOPPING CART</span></button></li>
+        <li><button type="button" data-id="pizzaslice"><img src="flyers/pizzaslice-idle.png" alt="" width="320" height="320" loading="lazy"><span>PIZZA SLICE</span></button></li>
+        <li><button type="button" data-id="dirtyshopvac"><img src="flyers/dirtyshopvac-idle.png" alt="" width="320" height="320" loading="lazy"><span>DIRTY SHOP-VAC</span></button></li>
+      </ul>
+    </section>
+
+    <!-- WORLDS -->
+    <section class="section worlds burst burst-dark" id="worlds">
+      <div class="burst-rays" aria-hidden="true"></div>
+      <h2 class="mega reveal">
+        <span class="c-white">8 UNHINGED</span>
+        <span class="c-cyan">WORLDS.</span>
+      </h2>
+      <p class="sub reveal">New world. Same failure.</p>
+
+      <div class="world-row">
+        <figure class="world reveal"><div class="phone"><video data-src="clips/world-hotfold.mp4" poster="clips/world-hotfold.jpg" muted loop playsinline preload="none"></video></div><figcaption>HOT FOLD</figcaption></figure>
+        <figure class="world reveal"><div class="phone"><video data-src="clips/world-devilspit.mp4" poster="clips/world-devilspit.jpg" muted loop playsinline preload="none"></video></div><figcaption>DEVIL'S PIT</figcaption></figure>
+        <figure class="world reveal"><div class="phone"><video data-src="clips/world-citylife.mp4" poster="clips/world-citylife.jpg" muted loop playsinline preload="none"></video></div><figcaption>CITY LIFE</figcaption></figure>
+        <figure class="world reveal"><div class="phone"><video data-src="clips/world-deepspace.mp4" poster="clips/world-deepspace.jpg" muted loop playsinline preload="none"></video></div><figcaption>DEEP SPACE</figcaption></figure>
+        <figure class="world reveal"><div class="phone"><video data-src="clips/world-storm.mp4" poster="clips/world-storm.jpg" muted loop playsinline preload="none"></video></div><figcaption>STORM WARNING</figcaption></figure>
+        <figure class="world reveal"><div class="phone"><video data-src="clips/world-office.mp4" poster="clips/world-office.jpg" muted loop playsinline preload="none"></video></div><figcaption>YOUR OFFICE</figcaption></figure>
+        <figure class="world reveal"><div class="phone"><video data-src="clips/world-sunset.mp4" poster="clips/world-sunset.jpg" muted loop playsinline preload="none"></video></div><figcaption>SUNSET COMMUTE</figcaption></figure>
+        <figure class="world reveal"><div class="phone"><video data-src="clips/world-giftwrap.mp4" poster="clips/world-giftwrap.jpg" muted loop playsinline preload="none"></video></div><figcaption>GIFT WRAP</figcaption></figure>
+      </div>
+    </section>
+
+    <!-- PROMISES -->
+    <section class="section promises">
+      <div class="promise p1 reveal">
+        <img src="flyers/classified-glide.png" alt="" width="320" height="320" loading="lazy">
+        <strong>NO ADS.</strong>
+        <span>Not one. No ad breaks, no “watch a video to continue.”</span>
+      </div>
+      <div class="promise p2 reveal">
+        <img src="flyers/crayon-panic.png" alt="" width="320" height="320" loading="lazy">
+        <strong>YOUR FACE STAYS PUT.</strong>
+        <span>Face cam records your reaction on the phone. It only leaves if you share it.</span>
+      </div>
+      <div class="promise p3 reveal">
+        <img src="flyers/receipt-dead.png" alt="" width="320" height="320" loading="lazy">
+        <strong>SHARE THE FAIL.</strong>
+        <span>Every crash cooks a vertical clip, ready to post.</span>
+      </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="section final burst">
+      <div class="burst-rays" aria-hidden="true"></div>
+      <div class="rain" aria-hidden="true"></div>
+      <h2 class="final-mark reveal">GO<br>FAIL.</h2>
+      <p class="hero-shout reveal">FLY STUPID <em>STUFF!</em></p>
+      <div class="cta reveal">
+        <a class="badge" href="https://apps.apple.com/app/id6815006578" aria-label="Download Fold Fail on the App Store">
+          <img src="assets/app-store-badge.svg" alt="Download on the App Store" width="180" height="60">
+        </a>
+        <span class="chip">FREE · NO ADS</span>
+      </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <p class="legal-links">
+  <footer class="footer">
+    <nav class="footer-links" aria-label="Legal">
       <a href="privacy/">Privacy Policy</a>
       <a href="support/">Support</a>
-    </p>
-    <p>A HadalCore product.</p>
-    <p>© 2026 HadalCore LLC</p>
+      <a href="mailto:support@foldfail.app">support@foldfail.app</a>
+    </nav>
+    <p>© 2026 HadalCore LLC · A HadalCore product.</p>
+    <p class="fine">Apple, the Apple logo and iPhone are trademarks of Apple Inc., registered in the U.S. and other countries. App Store is a service mark of Apple Inc.</p>
   </footer>
+
+  <script src="js/site.js" defer></script>
 </body>
 </html>

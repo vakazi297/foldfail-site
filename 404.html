@@ -2,27 +2,39 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Folded — Fold Fail</title>
-  <meta name="theme-color" content="#4A1FB8">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#1a0630">
+  <!-- Pages serves this file at whatever path was missing, so relative URLs need a fixed base.
+       The project site lives under /foldfail-site/; the custom domain serves from the root. -->
+  <script>document.write('<base href="' + (location.hostname.endsWith("github.io") ? "/foldfail-site/" : "/") + '">');</script>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Nunito:wght@700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,800;0,900;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/site.css">
 </head>
-<body>
+<body class="doc-page">
+  <div class="grain" aria-hidden="true"></div>
+
   <header class="nav">
-    <a class="brand" href="./">FOLD FAIL</a>
+    <a class="nav-mark" href="./">FOLD<span>FAIL</span></a>
     <nav class="nav-links" aria-label="Site">
       <a href="support/">SUPPORT</a>
       <a href="privacy/">PRIVACY</a>
+      <a class="nav-get" href="https://apps.apple.com/app/id6815006578">GET IT</a>
     </nav>
   </header>
-  <main class="sheet">
-    <h1>FOLDED</h1>
-    <p>That page isn’t here.</p>
-    <p><a href="./">Back to Fold Fail</a> · <a href="privacy/">Privacy Policy</a> · <a href="support/">Support</a></p>
+
+  <main class="lost burst burst-dark">
+    <div class="burst-rays" aria-hidden="true"></div>
+    <img src="flyers/yomamacouch-dead.png" alt="A crumpled couch flyer" width="320" height="320">
+    <h1 class="mega"><span class="c-yellow">FOLDED.</span><span class="c-pink">404</span></h1>
+    <p class="label">THIS PAGE <b>HIT A PANEL.</b></p>
+    <a class="home" href="./">TRY AGAIN</a>
   </main>
+
+  <script src="js/site.js" defer></script>
 </body>
 </html>
