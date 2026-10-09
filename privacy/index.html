@@ -34,7 +34,7 @@
     </section>
 
     <article class="doc">
-      <p class="meta">Effective September 28, 2026 · HadalCore LLC</p>
+      <p class="meta">Effective October 9, 2026 · HadalCore LLC</p>
       <p>Fold Fail is made by HadalCore LLC (“we”). This policy covers the Fold Fail iOS app and foldfail.app. We don’t run player accounts. Most of what the game remembers stays on your phone.</p>
 
       <div class="callout">
@@ -51,6 +51,16 @@
       <p>If you allow the camera, Fold Fail keeps a short rolling recording from the front camera while you play, so a crash can include your face. That buffer stays on the device. It is discarded when the run restarts unless you shared it, saved it, or turned on auto-save.</p>
       <p>Sharing uses the system share sheet. You pick where it goes. Saving writes a video to Photos, and only after you tap Save Clip (or after a crash, if you turned auto-save on). We never receive those videos.</p>
       <p>Face cam is on for a new player until you change it. On the fail screen, FACE CAM OFF stops it. If you already refused the system prompt, that switch opens Settings, because iOS only lets you change the decision there. We don’t ask again on our own.</p>
+
+      <h2>Face data</h2>
+      <p>Fold Fail does not collect face data. It does not use Face ID, the TrueDepth camera, ARKit face tracking, or any face detection, face recognition, facial geometry, or face mapping. It never analyzes, measures, or identifies a face.</p>
+      <p>The only camera feature is the optional reaction camera (“face cam”): ordinary video from the front camera, so a crash clip can show your reaction. If you allow the camera and leave face cam on:</p>
+      <ul>
+        <li><strong>Use.</strong> Frames are shown as a small picture-in-picture during a run and placed into that run’s fail clip. They are used for nothing else.</li>
+        <li><strong>Storage.</strong> The last 6 seconds of frames, at most 320 pixels on the longest side, are kept in the app’s memory on your device. The fail clip made from them is written to the app’s temporary folder on your device.</li>
+        <li><strong>Retention and deletion.</strong> Frames older than 6 seconds are overwritten continuously. The frames and the clip file are deleted when you start your next run, unless you shared or saved that clip. Any clip file still in the temporary folder is deleted the next time the app launches. Turning face cam off stops the camera.</li>
+        <li><strong>Sharing.</strong> We never receive camera frames or clips. They are not sent to us, to AppsFlyer, to Game Center, or to any other third party. A clip leaves your device only when you pick a destination in the system share sheet, or when you tap Save Clip (or turn on auto-save) to put it in your Photos library.</li>
+      </ul>
 
       <h2>Photos</h2>
       <p>Photo Library access is add-only, and only so a fail clip can be saved when you ask. We don’t read the rest of your library.</p>
